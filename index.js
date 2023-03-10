@@ -21,23 +21,6 @@ db.query('query', (err, data) => {
 
 });
 
-// Welcome screen
-
-setTimeout(menu, 1000);
-
-const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms))
-
-function welcome() {
-    const msg = "Employee \n Manager";
-        figlet(msg, (err, data) => {
-            console.log(gradient.pastel.multiline(data));
-        });
-         sleep();
-
-}
-
-welcome();
-
 // Inquirer menu prompt
 
 const menu = async () => {

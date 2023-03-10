@@ -8,11 +8,13 @@ INSERT INTO department (name) VALUES
 
 INSERT INTO role (title, salary, department_id) VALUES
 ('CEO', 1000000, 3),
-('CMO', 200000, 1),
-('CFO', 300000, 2),
-('CTO', 500000, 5),
-('Associate', 75000, 4),
+('Full Stack Developer', 200000, 1),
+('Software Engineer', 300000, 2),
+('Operations Manager', 500000, 5),
+('Project Manager', 75000, 4),
 ('Intern', 50000, 6);
+('Accountant', 10000, 2),
+('Finanical Analyst', 150000, 2),
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
 ('Hanamichi', 'Sakuragi', 1, null),
@@ -23,7 +25,3 @@ INSERT INTO employee (first_name, last_name, role_id, manager_id) VALUES
 ('Kim', 'Kardashian', 5, 2),
 ('Connor', 'McGregor', 6, 3),
 ('Scotty', 'Pippen', 5, 3),
-('Tri', 'Chau', 5, 2),
-('Bobby', 'Leslay', 6, 4),
-('Tommy', 'Hiddleston', 5, 5),
-('Rui', 'Hachimura', 6, 6);
