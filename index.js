@@ -16,10 +16,8 @@ const db = mysql.createConnection({
 });
 
 const query = util.promisify(db.query).bind(db);
-
-db.query('query', (err, data) => {
-
-});
+//console.log(query)
+db.query('query', (err, data) => {});
 
 // Inquirer menu prompt
 
@@ -41,10 +39,7 @@ const menu = async () => {
             'View Employees by Manager', 
             'View Employees by Department', 
             'Delete'
-        ]
-    }
-
-    )
+        ]})
 
     switch (response.choice) {
         case 'Delete':
@@ -212,8 +207,6 @@ const menu = async () => {
             }
             break;
 
-
-
             case 'View Employees by Manager':
             const answer = await prompt({
 
@@ -261,7 +254,6 @@ const menu = async () => {
 
             }
             break;
-
 
         case 'View Employees by Department':
             const empDepartment = await prompt({
@@ -331,5 +323,6 @@ const menu = async () => {
             console.table(updateTable);
             menu();
             break;
-    }
-}
+    }}
+
+menu ()
