@@ -49,5 +49,9 @@ After that client can invoked by using command:
 ```
 node index
 ```
+![](./Assets/screenshot.png)
 ## Result
 When using the apllication client will be able to view all information from database like department, role, and employee. Beside that, client also can add, delete, and update information inside database through the terminal.
+
+## Walkthrough Video
+(https://drive.google.com/file/d/1tWMoAqWgY4be8Dw7tYTDhtixqGed56Bk/view?usp=share_link)
